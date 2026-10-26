@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learning - Golden Gate Pentagon College." />
+  <title>Learning - Golden Gate Pentagon College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Caveat:wght@500;600;700&family=Dancing:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Golden Gate Pentagon College home">
+        <span class="brand-mark">GG</span>
+        <span><strong>GOLDEN GATE</strong><small>PENTAGON COLLEGE</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-icon">☾</span><span class="theme-label">Dark mode</span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">Our people</a>
+        <a href="learning.html">Learning</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Ask a question <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad" style="min-height:400px">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Learning that feels alive</p>
+          <h1>Room to wonder.<br><em>Space to become.</em></h1>
+          <p>From first questions to bold experiments, we turn everyday moments into meaningful learning.</p>
+        </div>
+      </section>
+
+      <section class="learning-section section-pad">
+        <div class="learning-intro"><p class="eyebrow"><span></span> Learning that feels alive</p><h2>Room to wonder.<br><em>Space to become.</em></h2><p>From first questions to bold experiments, we turn everyday moments into meaningful learning.</p><a class="button button-light" href="contact.html">Ask about admissions <span>→</span></a></div>
+        <div class="learning-content"><div class="classes-panel"><p class="panel-kicker">Classes available</p><div class="class-row"><strong>01</strong><span>Early Years</span><small>ages 3–5</small></div><div class="class-row"><strong>02</strong><span>Primary School</span><small>ages 6–10</small></div><div class="class-row"><strong>03</strong><span>Junior Secondary</span><small>ages 11–13</small></div><div class="class-row"><strong>04</strong><span>Senior Secondary</span><small>ages 14–17</small></div></div><div class="subjects-panel"><p class="panel-kicker">Our studio subjects</p><div class="subject-chip coral">Art &amp; design <span>↗</span></div><div class="subject-chip yellow">Science &amp; discovery <span>↗</span></div><div class="subject-chip mint">Creative writing <span>↗</span></div><div class="subject-chip blue">Technology &amp; making <span>↗</span></div></div></div>
+      </section>
+
+      <section class="video-section section-pad">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> School highlight</p><h2>See the <em>school in motion.</em></h2></div></div>
+        <div class="video-panel">
+          <div class="video-grid">
+            <div class="video-slot">
+              <video id="school-video-1" controls preload="metadata" playsinline>
+                <source src="videos/videoplayback.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-slot">
+              <video id="school-video-2" controls preload="metadata" playsinline>
+                <source src="video/videos/Spider-Man_No_Way_Home_360P.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="video-slot">
+              <video id="school-video-3" controls preload="metadata" playsinline>
+                <source src="videos/Spider-Man_No_Way_Home_360P.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">GG</span><span><strong>GOLDEN GATE</strong><small>PENTAGON COLLEGE</small></span></a><p>Learn bravely. Live brightly.</p><p>© 2025 Golden Gate Pentagon College</p></footer>
+
+    <button class="chat-fab" id="chat-fab" aria-label="Open chat" aria-expanded="false">💬</button>
+    <div class="chat-window" id="chat-window" hidden>
+      <div class="chat-head">
+        <div class="chat-avatar">GG</div>
+        <div><strong>School chat</strong><small>Usually replies in a few minutes</small></div>
+        <button class="chat-close" id="chat-close" aria-label="Close chat">✕</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-bot">How can I be of assistance?</div>
+      </div>
+      <form class="chat-input" id="chat-form">
+        <input type="text" id="chat-text" placeholder="Type a message…" autocomplete="off" required />
+        <button type="submit" aria-label="Send">➤</button>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
+

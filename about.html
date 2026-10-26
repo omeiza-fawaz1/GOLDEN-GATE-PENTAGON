@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Golden Gate Pentagon College." />
+  <title>About - Golden Gate Pentagon College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Caveat:wght@500;600;700&family=Dancing:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Golden Gate Pentagon College home">
+        <span class="brand-mark">GG</span>
+        <span><strong>GOLDEN GATE</strong><small>PENTAGON COLLEGE</small></span>
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">â˜°</button>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false"><span class="theme-icon">â˜¾</span><span class="theme-label">Dark mode</span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="people.html">Our people</a>
+        <a href="learning.html">Learning</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="contact.html">Ask a question <span>â†—</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-pad" style="min-height:480px">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> About our school</p>
+          <h1>A school with a <em>point of view.</em></h1>
+          <p>There is more than one way to be brilliant. We make room for the whole child.</p>
+        </div>
+      </section>
+
+      <section id="about" class="intro section-pad split-section">
+        <div><p class="eyebrow"><span></span> A school with a point of view</p><h2>There is more than one way to be <em>brilliant.</em></h2></div>
+        <div class="intro-copy"><p>At Golden Gate Pentagon College, we make room for the whole child. Our classrooms are joyful, our expectations are high, and our community is built on the belief that confidence grows when children feel known. We don't just teach â€” we connect, and we shape destiny and inspire young minds.</p><a class="text-link" href="learning.html">See how we learn <span>â†’</span></a></div>
+      </section>
+
+      <section class="section-pad">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> Our story</p><h2>Small school energy.<br><em>Big possibilities.</em></h2></div></div>
+        <div class="intro" style="max-width:760px;margin:0 auto">
+          <p>Founded in 2011, Golden Gate Pentagon College began as a bold idea: that learning should feel alive, personal, and full of wonder. Today we serve families across early years, primary, and secondary levels, blending strong academics with creative studios, outdoor exploration, and community connection.</p>
+          <p>Every child is known by name. Every question is worth pursuing. And every classroom is a place where curiosity is the curriculum.</p>
+        </div>
+      </section>
+
+      <section id="holo" class="holo-section section-pad">
+        <div class="holo-copy">
+          <p class="eyebrow"><span></span> Future in 3D</p>
+          <h2>See our <em>campus in the round.</em></h2>
+          <p>Drag to spin, scroll to zoom. Our holographic campus shows the spaces where curiosity takes shape.</p>
+        </div>
+        <div class="holo-stage" id="holo-stage">
+          <canvas id="holo-canvas"></canvas>
+          <div class="holo-caption">Golden Gate Pentagon College Â· 3D Hologram</div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">GG</span><span><strong>GOLDEN GATE</strong><small>PENTAGON COLLEGE</small></span></a><p>Learn bravely. Live brightly.</p><p>Â© 2025 Golden Gate Pentagon College</p></footer>
+
+    <button class="chat-fab" id="chat-fab" aria-label="Open chat" aria-expanded="false">ðŸ’¬</button>
+    <div class="chat-window" id="chat-window" hidden>
+      <div class="chat-head">
+        <div class="chat-avatar">GG</div>
+        <div><strong>School chat</strong><small>Usually replies in a few minutes</small></div>
+        <button class="chat-close" id="chat-close" aria-label="Close chat">âœ•</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-bot">How can I be of assistance?</div>
+      </div>
+      <form class="chat-input" id="chat-form">
+        <input type="text" id="chat-text" placeholder="Type a messageâ€¦" autocomplete="off" required />
+        <button type="submit" aria-label="Send">âž¤</button>
+      </form>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
+
