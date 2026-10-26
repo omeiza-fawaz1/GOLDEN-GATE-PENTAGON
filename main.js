@@ -1,4 +1,4 @@
-﻿const menuToggle = document.querySelector('.menu-toggle');
+const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.main-nav');
 
 menuToggle?.addEventListener('click', () => {
@@ -39,7 +39,7 @@ function setTheme(theme) {
   document.body.dataset.theme = isDark ? 'dark' : 'light';
   themeToggle?.setAttribute('aria-pressed', String(isDark));
   themeToggle?.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
-  if (themeToggle) themeToggle.querySelector('.theme-icon').textContent = isDark ? 'â˜€' : 'â˜¾';
+  if (themeToggle) themeToggle.querySelector('.theme-icon').textContent = isDark ? '☀' : '☾';
   if (themeToggle) themeToggle.querySelector('.theme-label').textContent = isDark ? 'Light mode' : 'Dark mode';
 }
 
